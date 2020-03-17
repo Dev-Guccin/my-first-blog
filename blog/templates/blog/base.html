@@ -16,7 +16,7 @@
             <nav>
                 <ul class="topnav">
 		{% if user.is_authenticated %}
-		<span>welcome {{ user.username }} </span>
+		<li class="topnav-item"> <a href="">{{ user.username }}</a></li>
 		<li class="topnav-item"> <a href="">about</a></li>
 		<li class="topnav-item"> <a href="{% url 'logout' %}">logout</a></li>
                 {% else %}
