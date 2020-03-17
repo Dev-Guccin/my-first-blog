@@ -44,3 +44,71 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+body{
+  margin :0;
+}
+/*최상단 네비게이터*/
+.topnavbox{
+  height:50px;
+  margin:0;
+  padding: 0;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sitename{
+  margin : 10px;
+}
+#sitename a{
+  text-align:center;
+  text-decoration:none;
+  color:black;
+}
+.topnavbox .topnav{
+  display:flex;
+  float : right;
+  flex-direction:row;
+  list-style-type:none;
+}
+.topnav-item{
+  padding:15px;
+  cursor:pointer;
+}
+.topnav-item a{
+  text-align:center;
+  text-decoration:none;
+  color:black;
+  font-size: 12px;
+}
+
+/*메인 네비게이터*/
+.mainnavbox{
+  height:60px;
+  margin:0;
+  padding: 0;
+  color: white;
+  background: #3c467d;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainnavbox .mainnav{
+  display:flex;
+  flex-direction:row;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+.nav-item{
+  padding:15px;
+  cursor:pointer;
+}
+.nav-item a{
+  text-align:center;
+  text-decoration:none;
+  color:white;
+}

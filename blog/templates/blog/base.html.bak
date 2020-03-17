@@ -9,7 +9,13 @@
     </head>
     <body>
         <div class="page-header">
-	<header>
+	    {% if user.is_authenticated %}
+	    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+	    <p class="top-menu"><span>Hello {{ user.username }}</span><small> <a class="glyphicon glyphicon-remove" style="color:red" href="{% url 'logout' %}"></a> </small></p>
+	    {% else %}
+	    <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-off"></span></a>
+	    {% endif %}
+		<header>
         <div class="topnavbox">
             <div id="sitename">
                 <a href="main.html"><h1>WINA</h1></a>
