@@ -17,7 +17,7 @@
                 <ul class="topnav">
 		{% if user.is_authenticated %}
 		<li class="topnav-item"> <a href="">about</a></li>
-		<li class="topnav-item"> <a href="{% url 'post_edit' %}">Write</a></li>
+		<li class="topnav-item"> <a href="{% url 'post_new' %}">Write</a></li>
                 {% else %}
 		<li class="topnav-item"> <a href="">about</a></li>
                 <li class="topnav-item"> <a href="{% url 'login' %}">Login</a></li>
